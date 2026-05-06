@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finland | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#475569",
+            "primary": "#0f172a",
+            "outline-variant": "#e2e8f0",
+            "surface-container": "#f8fafc",
+            "surface-container-low": "#ffffff",
+            "brand-gold": "#c9a84c",
+            "brand-blue": "#0d1b2a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0px",
+            "lg": "2px",
+            "xl": "4px",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Inter", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+            "label": ["Inter", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+    .serif-title { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .nav-border { border-bottom: 1px solid #e2e8f0; }
+    .bg-accent-gradient {
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(201, 168, 76, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(13, 27, 42, 0.05) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+    .watermark-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body class="text-on-surface bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="#">Global Index</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Rankings.html">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Back to Home
+  </a>
+</nav>
+<!-- Hero Section -->
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<img alt="Flag of Finland" class="w-8 h-auto border border-slate-100" src="https://flagcdn.com/w80/fi.png"/>
+<span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Best Performance
+          </span>
+</div>
+<h1 class="serif-title text-6xl md:text-7xl font-bold tracking-tight text-on-surface">Finland</h1>
+</div>
+<div class="flex flex-col items-start md:items-end gap-1 text-on-surface-variant">
+<span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">Regional Hub</span>
+<span class="text-base font-normal">Nordic Jurisdiction</span>
+</div>
+</div>
+</header>
+<main class="px-8 max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+<!-- Left Column -->
+<div class="lg:col-span-5 space-y-12">
+<section class="space-y-6">
+<h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+<span class="w-4 h-[1px] bg-brand-gold"></span>
+          The Judicial Framework
+        </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed font-normal text-base">
+<p>
+            Finland's criminal justice system is built on a robust framework of judicial independence and the rule of law. According to UNODC documentation and the EU Commission's Rule of Law Report 2024, Finland has fully implemented recommendations to strengthen the independence of its justice system, establishing a dedicated working group — "Rule of Law Guarantees and Development of the Judicial System" — that oversees over 140 structural reform action points.
+          </p>
+<p>
+            Finland's Prison and Probation Service is internationally recognized for its rehabilitative approach to incarceration. UNODC records highlight Finland's promotion of open and semi-open prison facilities as effective instruments for social reintegration, reducing recidivism through community-based reintegration programmes, vocational training, and tailored support for neurodivergent inmates. The prison population stands at 3,406 (2024), reflecting a rate of 60 per 100,000 — one of the lowest in the European Union.
+          </p>
+<p>
+            With an intentional homicide rate of 0.98 per 100,000 population recorded by UNODC (2023), Finland ranks among the safest nations in the world. This figure reflects the strength of Finland's crime prevention infrastructure, community policing, and early social intervention policies that have been consistently developed over decades of welfare-state governance.
+          </p>
+</div>
+</section>
+<section class="space-y-6 pt-8 border-t border-slate-100">
+<h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+<span class="w-4 h-[1px] bg-brand-gold"></span>
+          Corruption &amp; Accountability
+        </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed font-normal text-base">
+<p>
+            Transparency International's 2024 Corruption Perceptions Index ranks Finland second among 180 countries, with a score of 88 out of 100. This result reflects Finland's deeply embedded culture of transparency, a highly independent judiciary, and a public sector renowned for its integrity and accountability. Finland has maintained a top-three global ranking consistently over the past decade.
+          </p>
+<p>
+            Despite its outstanding standing, Transparency International notes areas for vigilance in Finland's governance landscape. The 2024 CPI report and the EU Rule of Law Report identify the length of judicial proceedings, the high cost of trials, and the underfunding of the justice system as structural challenges that the Finnish government must address to sustain its leadership position in global anti-corruption rankings.
+          </p>
+</div>
+</section>
+<section class="space-y-4 pt-8 border-t border-slate-100">
+<h3 class="text-[10px] font-bold tracking-widest text-on-surface uppercase">Information Sources</h3>
+<ul class="space-y-2">
+<li>
+  <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://unodc.org" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+    </svg>
+    unodc.org
+  </a>
+</li>
+<li>
+  <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://transparency.org" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+    </svg>
+    transparency.org
+  </a>
+</li>
+</ul>
+</section>
+</div>
+<!-- Right Column: Stats & Image -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">CPI Score</div>
+<div class="text-4xl font-bold text-on-surface">88</div>
+<div class="text-[10px] text-slate-400 mt-2">Scale 0-100</div>
+</div>
+<div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Homicide Rate</div>
+<div class="text-4xl font-bold text-on-surface">0.98</div>
+<div class="text-[10px] text-slate-400 mt-2">Per 100k Pop.</div>
+</div>
+<div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Global Rank</div>
+<div class="text-4xl font-bold text-on-surface">2</div>
+<div class="text-[10px] text-slate-400 mt-2">Top Tier</div>
+</div>
+</div>
+<!-- Architectural image -->
+<div class="relative group overflow-hidden border border-slate-100 shadow-sm">
+<img alt="Helsinki Cathedral and Senate Square, institutional heart of Finland" class="w-full h-[600px] object-cover grayscale brightness-90 hover:brightness-100 transition-all duration-1000 ease-in-out" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Helsinki_Senate_Square%2C_2019_%2801%29.jpg"/>
+<div class="absolute inset-0 bg-brand-blue/5 pointer-events-none mix-blend-multiply"></div>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+<div class="text-[10px] text-white/80 uppercase tracking-widest font-bold mb-1">Institutional Landmark</div>
+<div class="text-white text-lg font-medium">Senate Square &amp; Helsinki Cathedral</div>
+<p class="text-white/60 text-[10px] mt-2 max-w-sm">Senate Square, the institutional heart of Helsinki, flanked by the Government Palace and the Helsinki Cathedral, symbolizes Finland's centuries-old commitment to democratic governance.</p>
+</div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-slate-400 font-medium px-2">
+<span>* Visual documentation of federal authority.</span>
+<span>Updated: Dec 2024</span>
+</div>
+</div>
+</main>
+<footer class="mt-24 pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+<div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+<div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+<a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+<a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+</div>
+<div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+</body></html>

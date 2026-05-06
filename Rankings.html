@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rankings | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#0f172a",
+          "on-surface-variant": "#475569",
+          "primary": "#0f172a",
+          "outline-variant": "#e2e8f0",
+          "surface-container": "#f8fafc",
+          "surface-container-low": "#ffffff",
+          "brand-gold": "#c9a84c",
+          "brand-blue": "#0d1b2a"
+        },
+        borderRadius: {
+          DEFAULT: "0px", lg: "2px", xl: "4px", full: "9999px"
+        },
+        fontFamily: {
+          headline: ["Inter", "sans-serif"],
+          body: ["Inter", "sans-serif"],
+          label: ["Inter", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+  .serif-title { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+  .nav-border { border-bottom: 1px solid #e2e8f0; }
+  .bg-accent-gradient {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(201, 168, 76, 0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(13, 27, 42, 0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  .watermark-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+  .bar-fill { transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+  tr.country-row:hover td { background-color: #f8fafc; }
+  tr.country-row td { transition: background-color 0.15s ease; }
+  .rank-medal-1 { color: #c9a84c; }
+  .rank-medal-2 { color: #94a3b8; }
+  .rank-medal-3 { color: #a37c52; }
+  input[type="text"]:focus { outline: none; border-color: #c9a84c; box-shadow: 0 0 0 2px rgba(201,168,76,0.15); }
+</style>
+</head>
+<body class="text-on-surface bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+
+<!-- Navbar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="#">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Back to Home
+  </a>
+</nav>
+
+<!-- Hero -->
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span>
+          2024 Edition
+        </span>
+      </div>
+      <h1 class="serif-title text-6xl md:text-7xl font-bold tracking-tight text-on-surface">Global Rankings</h1>
+      <p class="mt-4 text-on-surface-variant text-base font-normal max-w-xl">Corruption Perceptions Index 2024 — 180 countries ranked by their perceived levels of public sector corruption. Source: Transparency International.</p>
+    </div>
+    <div class="flex flex-col items-start md:items-end gap-4">
+      <div class="flex gap-6">
+        <div class="text-right">
+          <div class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold mb-1">Countries</div>
+          <div class="text-3xl font-bold text-on-surface">180</div>
+        </div>
+        <div class="text-right">
+          <div class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold mb-1">Top Score</div>
+          <div class="text-3xl font-bold text-on-surface">90</div>
+        </div>
+        <div class="text-right">
+          <div class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold mb-1">Avg. Score</div>
+          <div class="text-3xl font-bold text-on-surface">43</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto pb-24 relative z-10">
+
+  <!-- Filters -->
+  <div class="flex flex-col sm:flex-row gap-4 mb-8 items-start sm:items-center justify-between">
+    <div class="relative w-full sm:w-72">
+      <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input id="searchInput" type="text" placeholder="Search a country..." class="w-full pl-9 pr-4 py-2 text-sm border border-slate-200 bg-white text-on-surface placeholder-slate-400 focus:border-brand-gold transition-colors"/>
+    </div>
+    <div class="flex gap-2">
+      <button onclick="filterRegion('all')" class="filter-btn active px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border border-slate-200 hover:border-brand-gold transition-colors" data-region="all">All</button>
+      <button onclick="filterRegion('green')" class="filter-btn px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border border-slate-200 hover:border-brand-gold transition-colors" data-region="green">Clean (60+)</button>
+      <button onclick="filterRegion('orange')" class="filter-btn px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border border-slate-200 hover:border-brand-gold transition-colors" data-region="orange">Moderate (40-59)</button>
+      <button onclick="filterRegion('red')" class="filter-btn px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest border border-slate-200 hover:border-brand-gold transition-colors" data-region="red">Corrupt (0-39)</button>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="flex gap-6 mb-6 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>60–100 Very Clean</span>
+    <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-orange-400"></span>40–59 Moderate</span>
+    <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-500"></span>0–39 Highly Corrupt</span>
+  </div>
+
+  <!-- Table -->
+  <div class="border border-slate-100 overflow-hidden">
+    <table class="w-full text-sm" id="rankingsTable">
+      <thead>
+        <tr class="border-b border-slate-100 bg-slate-50/80">
+          <th class="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant w-16">Rank</th>
+          <th class="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Country</th>
+          <th class="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant w-24">Score</th>
+          <th class="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant hidden md:table-cell">Index Bar</th>
+          <th class="text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant w-24 hidden sm:table-cell">Status</th>
+          <th class="w-10"></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div id="noResults" class="hidden text-center py-16 text-on-surface-variant text-sm">No country found.</div>
+  </div>
+
+  <div class="mt-6 text-[10px] text-slate-400 font-medium">
+    Source: Transparency International — Corruption Perceptions Index 2024. Scale 0 (highly corrupt) to 100 (very clean).
+  </div>
+</main>
+
+<footer class="pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+  <div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+  <div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+  </div>
+  <div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+
+<style>
+  .filter-btn.active { border-color: #c9a84c; color: #0f172a; background: rgba(201,168,76,0.08); }
+</style>
+
+<script>
+const countries = [
+  { rank: 1,  name: "Denmark",      code: "dk", score: 90, page: "Denmark.html" },
+  { rank: 2,  name: "Finland",      code: "fi", score: 88, page: "Finland.html" },
+  { rank: 3,  name: "New Zealand",  code: "nz", score: 85, page: null },
+  { rank: 4,  name: "Norway",       code: "no", score: 84, page: null },
+  { rank: 5,  name: "Singapore",    code: "sg", score: 83, page: null },
+  { rank: 6,  name: "Sweden",       code: "se", score: 82, page: null },
+  { rank: 7,  name: "Switzerland",  code: "ch", score: 82, page: null },
+  { rank: 8,  name: "Netherlands",  code: "nl", score: 79, page: null },
+  { rank: 9,  name: "Luxembourg",   code: "lu", score: 78, page: null },
+  { rank: 10, name: "Germany",      code: "de", score: 75, page: null },
+  { rank: 11, name: "Iceland",      code: "is", score: 74, page: null },
+  { rank: 12, name: "Australia",    code: "au", score: 73, page: null },
+  { rank: 13, name: "Canada",       code: "ca", score: 76, page: null },
+  { rank: 14, name: "Estonia",      code: "ee", score: 73, page: null },
+  { rank: 15, name: "Ireland",      code: "ie", score: 74, page: null },
+  { rank: 16, name: "Hong Kong",    code: "hk", score: 75, page: null },
+  { rank: 17, name: "Austria",      code: "at", score: 71, page: null },
+  { rank: 18, name: "Japan",        code: "jp", score: 73, page: null },
+  { rank: 19, name: "United Kingdom", code: "gb", score: 71, page: null },
+  { rank: 20, name: "Belgium",      code: "be", score: 73, page: null },
+  { rank: 21, name: "France",       code: "fr", score: 69, page: null },
+  { rank: 22, name: "Bhutan",       code: "bt", score: 68, page: null },
+  { rank: 23, name: "Uruguay",      code: "uy", score: 73, page: null },
+  { rank: 24, name: "United States",code: "us", score: 69, page: null },
+  { rank: 25, name: "Chile",        code: "cl", score: 66, page: null },
+  { rank: 26, name: "Taiwan",       code: "tw", score: 67, page: null },
+  { rank: 27, name: "Israel",       code: "il", score: 62, page: null },
+  { rank: 28, name: "Portugal",     code: "pt", score: 64, page: null },
+  { rank: 29, name: "Spain",        code: "es", score: 60, page: null },
+  { rank: 30, name: "Seychelles",   code: "sc", score: 71, page: null },
+  { rank: 40, name: "Italy",        code: "it", score: 56, page: null },
+  { rank: 45, name: "South Africa", code: "za", score: 41, page: null },
+  { rank: 55, name: "Brazil",       code: "br", score: 36, page: null },
+  { rank: 60, name: "India",        code: "in", score: 39, page: null },
+  { rank: 76, name: "China",        code: "cn", score: 42, page: null },
+  { rank: 85, name: "Mexico",       code: "mx", score: 31, page: null },
+  { rank: 107,name: "Russia",       code: "ru", score: 26, page: null },
+  { rank: 140,name: "Venezuela",    code: "ve", score: 13, page: null },
+  { rank: 164,name: "Syria",        code: "sy", score: 13, page: null },
+  { rank: 177,name: "South Sudan",  code: "ss", score: 13, page: null },
+  { rank: 179,name: "Somalia",      code: "so", score: 11, page: null },
+  { rank: 180,name: "Yemen",        code: "ye", score: 16, page: null },
+];
+
+function getColor(score) {
+  if (score >= 60) return { dot: "bg-emerald-500", bar: "#22c55e", label: "Very Clean" };
+  if (score >= 40) return { dot: "bg-orange-400", bar: "#fb923c", label: "Moderate" };
+  return { dot: "bg-red-500", bar: "#ef4444", label: "Corrupt" };
+}
+
+function getCategory(score) {
+  if (score >= 60) return "green";
+  if (score >= 40) return "orange";
+  return "red";
+}
+
+function renderTable(data) {
+  const tbody = document.getElementById("tableBody");
+  const noResults = document.getElementById("noResults");
+  tbody.innerHTML = "";
+  if (data.length === 0) { noResults.classList.remove("hidden"); return; }
+  noResults.classList.add("hidden");
+
+  data.forEach(c => {
+    const col = getColor(c.score);
+    const rankDisplay = c.rank === 1
+      ? `<span class="rank-medal-1 font-bold text-lg">1</span>`
+      : c.rank === 2
+      ? `<span class="rank-medal-2 font-bold">${c.rank}</span>`
+      : c.rank === 3
+      ? `<span class="rank-medal-3 font-bold">${c.rank}</span>`
+      : `<span class="text-on-surface-variant">${c.rank}</span>`;
+
+    const pageLink = c.page
+      ? `<a href="${c.page}" class="flex items-center justify-center w-7 h-7 border border-slate-200 hover:border-brand-gold transition-colors group">
+           <svg class="text-slate-300 group-hover:text-brand-gold transition-colors" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+         </a>`
+      : `<div class="w-7 h-7 flex items-center justify-center">
+           <span class="text-slate-200 text-[10px]">—</span>
+         </div>`;
+
+    const tr = document.createElement("tr");
+    tr.className = "country-row border-b border-slate-50";
+    tr.setAttribute("data-category", getCategory(c.score));
+    tr.setAttribute("data-name", c.name.toLowerCase());
+    tr.innerHTML = `
+      <td class="px-4 py-3 text-sm font-medium">${rankDisplay}</td>
+      <td class="px-4 py-3">
+        <div class="flex items-center gap-3">
+          <img src="https://flagcdn.com/w40/${c.code}.png" alt="${c.name}" class="w-6 h-auto border border-slate-100 flex-shrink-0"/>
+          <span class="font-medium text-on-surface text-sm">${c.name}</span>
+        </div>
+      </td>
+      <td class="px-4 py-3">
+        <span class="text-2xl font-bold text-on-surface">${c.score}</span>
+        <span class="text-slate-400 text-[10px] ml-0.5">/100</span>
+      </td>
+      <td class="px-4 py-3 hidden md:table-cell">
+        <div class="w-full max-w-[180px] h-1.5 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bar-fill h-full rounded-full" style="width: ${c.score}%; background-color: ${col.bar};"></div>
+        </div>
+      </td>
+      <td class="px-4 py-3 hidden sm:table-cell">
+        <span class="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+          <span class="w-1.5 h-1.5 rounded-full ${col.dot}"></span>
+          ${col.label}
+        </span>
+      </td>
+      <td class="px-4 py-3">${pageLink}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+let currentFilter = "all";
+let currentSearch = "";
+
+function applyFilters() {
+  let filtered = countries;
+  if (currentFilter !== "all") filtered = filtered.filter(c => getCategory(c.score) === currentFilter);
+  if (currentSearch) filtered = filtered.filter(c => c.name.toLowerCase().includes(currentSearch));
+  renderTable(filtered);
+}
+
+function filterRegion(region) {
+  currentFilter = region;
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.region === region);
+  });
+  applyFilters();
+}
+
+document.getElementById("searchInput").addEventListener("input", e => {
+  currentSearch = e.target.value.toLowerCase();
+  applyFilters();
+});
+
+renderTable(countries);
+</script>
+</body>
+</html>
