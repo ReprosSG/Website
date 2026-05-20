@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#0f172a",
+          "on-surface-variant": "#475569",
+          "brand-gold": "#c9a84c",
+          "brand-blue": "#0d1b2a"
+        },
+        borderRadius: { DEFAULT: "0px", lg: "2px", xl: "4px", full: "9999px" },
+        fontFamily: { body: ["Inter", "sans-serif"] }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+  .nav-border { border-bottom: 1px solid #e2e8f0; }
+  .bg-accent-gradient {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(201,168,76,0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(13,27,42,0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  .watermark-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body class="bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+
+<!-- Navbar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html#map">Global Index</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Rankings.html">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="About.html">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 5l-7 7 7 7"/>
+    </svg>
+    Back to Home
+  </a>
+</nav>
+
+<!-- Hero -->
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 text-[10px] font-bold tracking-widest uppercase">Academic Project</span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tight text-on-surface" style="letter-spacing:-0.02em">About</h1>
+    </div>
+    <div class="flex flex-col items-start md:items-end gap-1 text-on-surface-variant">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">Course</span>
+      <span class="text-base font-normal">Web Programming</span>
+    </div>
+  </div>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+
+  <!-- Left Column — main content -->
+  <div class="lg:col-span-7 space-y-16">
+
+    <!-- The Project -->
+    <section class="space-y-6">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        The Project
+      </h2>
+      <div class="space-y-5 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          Justice World is a data-driven web platform built as part of the <span class="text-on-surface font-medium">Web Programming</span> course. Its purpose is to raise awareness around <span class="text-on-surface font-medium">UN Sustainable Development Goal 16 (SDG 16)</span> — Peace, Justice, and Strong Institutions — by visualising global data on corruption, homicide rates, and rule of law in an accessible and interactive format.
+        </p>
+        <p>
+          The platform presents country-level profiles, a global CPI rankings table, and an interactive world map, all built from a blank page using HTML, CSS (Tailwind CSS), and JavaScript — with no back-end framework or database. The visual design system was established with the assistance of an AI tool and served as a foundation for all pages.
+        </p>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="space-y-6 pt-8 border-t border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        Methodology
+      </h2>
+      <div class="space-y-5 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          All data presented on Justice World is sourced from internationally recognised and publicly available institutions. No data has been modified, extrapolated, or estimated beyond what is published in the original reports.
+        </p>
+        <p>
+          <span class="text-on-surface font-medium">Corruption scores</span> are drawn from the Transparency International Corruption Perceptions Index (CPI) 2024, which aggregates data from 13 independent sources to produce a score on a scale of 0 (highly corrupt) to 100 (very clean) for 180 countries.
+        </p>
+        <p>
+          <span class="text-on-surface font-medium">Homicide rates</span> are sourced from the United Nations Office on Drugs and Crime (UNODC) Global Study on Homicide and national statistics agencies (e.g. Statistics Canada, NZ Police), expressed as intentional homicides per 100,000 population.
+        </p>
+        <p>
+          <span class="text-on-surface font-medium">Rule of law scores</span> are taken from the World Justice Project Rule of Law Index 2024, which evaluates 142 countries across eight dimensions including constraints on government powers, absence of corruption, open government, and civil and criminal justice.
+        </p>
+      </div>
+    </section>
+
+    <!-- Limitations -->
+    <section class="space-y-6 pt-8 border-t border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        Limitations
+      </h2>
+      <div class="space-y-5 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          The CPI is a <span class="text-on-surface font-medium">perception-based index</span> — it reflects how corruption is perceived by experts and business leaders, not necessarily the actual level of corruption. Countries with strong media environments and high transparency may score better simply because their corruption is more visible and documented.
+        </p>
+        <p>
+          Homicide data <span class="text-on-surface font-medium">reporting quality varies significantly</span> across countries. In nations with weak institutional capacity or ongoing conflict, under-reporting is common, meaning official figures may underestimate the true rate.
+        </p>
+        <p>
+          The country profiles currently available represent a <span class="text-on-surface font-medium">non-exhaustive selection</span> of countries, prioritising those at the top of the CPI ranking. The platform is under active development; additional country pages are planned.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Right Column — sidebar -->
+  <div class="lg:col-span-5 space-y-10">
+
+    <!-- Author card -->
+    <div class="border border-slate-100 p-8 space-y-6 bg-white/60">
+      <h3 class="text-[10px] font-bold uppercase tracking-widest text-on-surface">Author</h3>
+      <div class="space-y-3">
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Name</span>
+          <span class="text-on-surface font-medium">Rémy Queny</span>
+        </div>
+        <div class="h-px bg-slate-100"></div>
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Student ID</span>
+          <span class="text-on-surface font-medium">114522910</span>
+        </div>
+        <div class="h-px bg-slate-100"></div>
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Course</span>
+          <span class="text-on-surface font-medium">Web Programming</span>
+        </div>
+        <div class="h-px bg-slate-100"></div>
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Year</span>
+          <span class="text-on-surface font-medium">2025–2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data sources -->
+    <div class="border border-slate-100 p-8 space-y-6 bg-white/60">
+      <h3 class="text-[10px] font-bold uppercase tracking-widest text-on-surface">Data Sources</h3>
+      <ul class="space-y-4">
+        <li>
+          <a href="https://www.transparency.org" target="_blank" rel="noopener noreferrer"
+             class="flex items-start gap-3 group">
+            <svg class="mt-0.5 shrink-0 text-brand-gold" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <div>
+              <div class="text-xs font-semibold text-on-surface group-hover:text-brand-gold transition-colors">Transparency International</div>
+              <div class="text-[11px] text-on-surface-variant mt-0.5">Corruption Perceptions Index 2024</div>
+            </div>
+          </a>
+        </li>
+        <li class="pt-2 border-t border-slate-100">
+          <a href="https://www.unodc.org" target="_blank" rel="noopener noreferrer"
+             class="flex items-start gap-3 group">
+            <svg class="mt-0.5 shrink-0 text-brand-gold" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <div>
+              <div class="text-xs font-semibold text-on-surface group-hover:text-brand-gold transition-colors">UNODC</div>
+              <div class="text-[11px] text-on-surface-variant mt-0.5">Global Study on Homicide & Criminal Justice Data</div>
+            </div>
+          </a>
+        </li>
+        <li class="pt-2 border-t border-slate-100">
+          <a href="https://worldjusticeproject.org" target="_blank" rel="noopener noreferrer"
+             class="flex items-start gap-3 group">
+            <svg class="mt-0.5 shrink-0 text-brand-gold" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <div>
+              <div class="text-xs font-semibold text-on-surface group-hover:text-brand-gold transition-colors">World Justice Project</div>
+              <div class="text-[11px] text-on-surface-variant mt-0.5">Rule of Law Index 2024</div>
+            </div>
+          </a>
+        </li>
+        <li class="pt-2 border-t border-slate-100">
+          <a href="https://www.amnesty.org" target="_blank" rel="noopener noreferrer"
+             class="flex items-start gap-3 group">
+            <svg class="mt-0.5 shrink-0 text-brand-gold" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <div>
+              <div class="text-xs font-semibold text-on-surface group-hover:text-brand-gold transition-colors">Amnesty International</div>
+              <div class="text-[11px] text-on-surface-variant mt-0.5">Human Rights Reports & Country Assessments</div>
+            </div>
+          </a>
+        </li>
+        <li class="pt-2 border-t border-slate-100">
+          <a href="https://peacekeeping.un.org" target="_blank" rel="noopener noreferrer"
+             class="flex items-start gap-3 group">
+            <svg class="mt-0.5 shrink-0 text-brand-gold" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <div>
+              <div class="text-xs font-semibold text-on-surface group-hover:text-brand-gold transition-colors">UN Peacekeeping</div>
+              <div class="text-[11px] text-on-surface-variant mt-0.5">Global Conflict & Mission Data</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SDG 16 badge -->
+    <div class="border border-brand-gold/20 bg-brand-gold/5 p-8 space-y-3">
+      <div class="text-[10px] font-bold uppercase tracking-widest text-brand-gold">UN SDG 16</div>
+      <p class="text-sm text-on-surface font-medium leading-snug">Peace, Justice and Strong Institutions</p>
+      <p class="text-xs text-on-surface-variant leading-relaxed">
+        Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.
+      </p>
+      <a href="https://sdgs.un.org/goals/goal16" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-gold hover:underline mt-2">
+        Learn more on UN.org
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-24 pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+  <div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+  <div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+  </div>
+  <div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+</body></html>
