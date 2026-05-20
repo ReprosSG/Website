@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>United Kingdom | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#0f172a", "on-surface-variant": "#475569",
+          "brand-gold": "#c9a84c", "brand-blue": "#0d1b2a"
+        },
+        borderRadius: { DEFAULT: "0px", lg: "2px", xl: "4px", full: "9999px" },
+        fontFamily: { body: ["Inter", "sans-serif"] }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: "Inter", sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+  .nav-border { border-bottom: 1px solid #e2e8f0; }
+  .bg-accent-gradient {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(201,168,76,0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(13,27,42,0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  .watermark-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body class="bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="Home.html#map">Global Index</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Rankings.html">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="About.html">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to Home
+  </a>
+</nav>
+
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <img alt="Flag of the United Kingdom" class="w-8 h-auto border border-slate-100" src="https://flagcdn.com/w80/gb.png"/>
+        <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-700 text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+          Declining Trend
+        </span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tight text-on-surface" style="letter-spacing:-0.02em">United Kingdom</h1>
+    </div>
+    <div class="flex flex-col items-start md:items-end gap-1 text-on-surface-variant">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">Western Europe</span>
+      <span class="text-base font-normal">Common Law Origin Nation</span>
+    </div>
+  </div>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+  <div class="lg:col-span-5 space-y-12">
+
+    <section class="space-y-6">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        The Judicial Framework
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          The United Kingdom's legal system is not a single unified system but comprises three distinct jurisdictions: England and Wales, Scotland (which retains its own Scots law blending civil and common law), and Northern Ireland. All three are bound by the Supreme Court of the United Kingdom, established in 2009 under the Constitutional Reform Act 2005 to replace the judicial function of the House of Lords — a landmark separation of powers that formally distinguished the judiciary from the legislature for the first time. The Supreme Court, housed in the ornate Middlesex Guildhall on Parliament Square in Westminster, is the final court of appeal for all UK civil cases and all criminal cases from England, Wales and Northern Ireland. It is composed of twelve Justices appointed by an independent commission, with Lord Reed serving as President since 2020.
+        </p>
+        <p>
+          The UK's common law system, developed over nine centuries since Magna Carta (1215), is one of the most influential legal traditions in the world, providing the foundational framework for legal systems across dozens of former British territories including the United States, Canada, Australia, India, and Hong Kong. The principle of parliamentary sovereignty — the doctrine that Parliament can enact or repeal any law — remains the cornerstone of the UK constitution, though it has been progressively moderated by the Human Rights Act 1998 (incorporating the European Convention on Human Rights), devolution settlements, and judicial review. In April 2025, the UK Supreme Court delivered a landmark ruling that the legal definition of "woman" under the Equality Act 2010 is based on biological sex, a decision with wide-ranging implications for public life and institutional policy.
+        </p>
+        <p>
+          England and Wales recorded 602 homicides in the year ending March 2023 — a rate of approximately 1.0 per 100,000 population, among the lowest in Western Europe and a sustained improvement over two decades. Scotland recorded a homicide rate of 1.5 per 100,000 in 2022–23. The Office for National Statistics (ONS) and the Scottish Government publish annual homicide statistics, reflecting the UK's strong tradition of transparent crime reporting. The rate in England and Wales has fallen by roughly 30% since the mid-2000s peak, driven by long-term trends in knife crime reduction programmes, policing improvements, and demographic shifts.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-6 pt-8 border-t border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        Corruption &amp; Accountability
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          The United Kingdom scores 71 out of 100 on the Transparency International Corruption Perceptions Index 2024, ranking 20th globally alongside Japan. While still a strong performer in absolute terms, the UK's score represents a sharp decline from its position of 11th place in 2021 — a fall of nine places in three years that Transparency International UK attributes to a series of political scandals eroding institutional trust: the COVID-19 PPE procurement contracts controversy, the "cash for honours" allegations, the Greensill lobbying scandal, and questions over political party funding transparency. Daniel Bruce, CEO of TI UK, stated that "while a change in political leadership has brought some positive steps, the problems exposed by recent scandals demonstrate why more fundamental reform is needed."
+        </p>
+        <p>
+          TI UK has called on the government to implement a cap of £10,000 on political donations, establish an independent Ethics and Integrity Commission, strengthen the revolving door regulations between public office and the private sector, and place the House of Lords Appointments Commission on a statutory footing. The UK's anti-corruption enforcement architecture includes the Serious Fraud Office (SFO), the National Crime Agency (NCA), the Financial Conduct Authority (FCA), and His Majesty's Revenue and Customs (HMRC) — each operating with distinct but overlapping jurisdictions. Despite the declining CPI trend, the UK continues to conduct some of the world's most significant international anti-corruption enforcement actions, particularly through deferred prosecution agreements (DPAs) under the Bribery Act 2010.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-4 pt-8 border-t border-slate-100">
+      <h3 class="text-[10px] font-bold tracking-widest text-on-surface uppercase">Information Sources</h3>
+      <ul class="space-y-2">
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.transparency.org/en/countries/united-kingdom" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            transparency.org — UK CPI 2024
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.transparency.org.uk/news/corruption-perceptions-index-2025-uk-corruption-concerns-risk-becoming-new-normal" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            transparency.org.uk — CPI 2024 UK Analysis
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.ethnicity-facts-figures.service.gov.uk/crime-justice-and-the-law/crime-and-reoffending/victims-of-homicide/latest" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            gov.uk — Victims of Homicide Statistics 2023
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.bbc.com/news/live/cvgq9ejql39t" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            bbc.com — UK Supreme Court ruling, April 2025
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="lg:col-span-7 space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">CPI Score</div>
+        <div class="text-4xl font-bold text-on-surface">71</div>
+        <div class="text-[10px] text-slate-400 mt-2">Scale 0–100</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Homicide Rate</div>
+        <div class="text-4xl font-bold text-on-surface">1.0</div>
+        <div class="text-[10px] text-slate-400 mt-2">Per 100k Pop.</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Global Rank</div>
+        <div class="text-4xl font-bold text-on-surface">20</div>
+        <div class="text-[10px] text-amber-500 mt-2">↓ From 11th in 2021</div>
+      </div>
+    </div>
+
+    <div class="relative overflow-hidden border border-slate-100 shadow-sm">
+      <img
+        alt="Supreme Court of the United Kingdom — Middlesex Guildhall, Westminster, London"
+        class="w-full h-[600px] object-cover grayscale brightness-90 hover:brightness-100 transition-all duration-1000 ease-in-out"
+        src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Middlesex_Guildhall_by_Kelsey_Farish_%282%29.jpg"
+      />
+      <div class="absolute inset-0 bg-brand-blue/5 pointer-events-none mix-blend-multiply"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+        <div class="text-[10px] text-white/80 uppercase tracking-widest font-bold mb-1">Institutional Landmark</div>
+        <div class="text-white text-lg font-medium">Supreme Court of the United Kingdom — Westminster, London</div>
+        <p class="text-white/60 text-[10px] mt-2 max-w-sm">The Supreme Court of the United Kingdom, housed in the Grade II* listed Middlesex Guildhall (1913) on Parliament Square, has served as the UK's apex court since 2009. Facing the Houses of Parliament across the square, it embodies the modern separation of powers while standing as a direct physical expression of the common law tradition that has shaped legal systems across the world.</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center text-[10px] text-slate-400 font-medium px-2">
+      <span>* Visual documentation of judicial authority.</span>
+      <span>Updated: May 2026</span>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-24 pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+  <div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+  <div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+  </div>
+  <div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+</body></html>
