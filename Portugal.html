@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portugal | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#0f172a", "on-surface-variant": "#475569",
+          "brand-gold": "#c9a84c", "brand-blue": "#0d1b2a"
+        },
+        borderRadius: { DEFAULT: "0px", lg: "2px", xl: "4px", full: "9999px" },
+        fontFamily: { body: ["Inter", "sans-serif"] }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: "Inter", sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+  .nav-border { border-bottom: 1px solid #e2e8f0; }
+  .bg-accent-gradient {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(201,168,76,0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(13,27,42,0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  .watermark-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body class="bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="Home.html#map">Global Index</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Rankings.html">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="About.html">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to Home
+  </a>
+</nav>
+
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <img alt="Flag of Portugal" class="w-8 h-auto border border-slate-100" src="https://flagcdn.com/w80/pt.png"/>
+        <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-700 text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+          Declining Trend
+        </span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tight text-on-surface" style="letter-spacing:-0.02em">Portugal</h1>
+    </div>
+    <div class="flex flex-col items-start md:items-end gap-1 text-on-surface-variant">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">República Portuguesa</span>
+      <span class="text-base font-normal">Civil Law — Southern Europe</span>
+    </div>
+  </div>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+  <div class="lg:col-span-5 space-y-12">
+
+    <section class="space-y-6">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        The Judicial Framework
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          Portugal's legal system is a civil law jurisdiction of the Romano-Germanic tradition, shaped by the Napoleonic influence and further transformed following the 1974 Carnation Revolution, which ended 48 years of Estado Novo authoritarianism and established the current constitutional democracy. The Constitution of 1976 — one of the most progressive in Europe — enshrines an extensive catalogue of fundamental rights and organises the judiciary across four distinct court orders: judicial courts (headed by the Supremo Tribunal de Justiça), administrative and fiscal courts (headed by the Supremo Tribunal Administrativo), the Constitutional Court (Tribunal Constitucional), and the Court of Auditors (Tribunal de Contas). The Supremo Tribunal de Justiça, housed in the historic Convento de São Domingos building in Lisbon's Chiado district, serves as the final court of appeal in civil and criminal matters, with a bench of 55 justices appointed by the Conselho Superior da Magistratura.
+        </p>
+        <p>
+          Portugal's justice sector has been the subject of sustained OECD reform scrutiny. The OECD's 2024 report on the modernisation of the Portuguese justice sector highlights a decade of significant digital transformation — with the CITIUS electronic case management system now handling over 95% of all court filings — but identifies persisting structural challenges: excessive case backlogs (particularly in the Tribunal da Relação de Lisboa), underfunded public legal aid, and chronic understaffing of the Ministério Público. The 2025 EU Rule of Law Report recommends Portugal to continue efforts to improve the efficiency of Administrative and Tax Courts, where average case duration exceeds 36 months, and to strengthen the independence and resourcing of the Entidade para a Transparência, the body responsible for monitoring asset declarations of public officials. The Tancos arms case and the ongoing investigation into former Prime Minister António Costa — who resigned in November 2023 over a corruption probe — have intensified demands for faster, more transparent judicial proceedings.
+        </p>
+        <p>
+          Portugal recorded 89 intentional homicides in 2024 — a rate of approximately 0.84 per 100,000 population — one fewer than in 2023, according to the Annual Internal Security Report (RASI 2024). This makes Portugal one of the safest countries in Europe for homicide, with a rate comparable to the Nordic countries and well below the EU average of 0.9 per 100,000 (Eurostat 2023). However, 2025 saw a sharp reversal: Jornal de Notícias reported 108 homicides in 2025 — the highest figure since 2018 and a 21% year-on-year increase, driven by a rise in domestic violence femicide and organised crime-related killings in the Setúbal and Algarve regions. Of the 89 homicides in 2024, 23 (26%) occurred in domestic violence contexts, with knives and firearms the primary instruments. General crime fell 4.6% in 2024 to 354,878 reports, but violent and serious crime increased 2.6%, reflecting a bifurcation between declining petty crime and rising violence.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-6 pt-8 border-t border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        Corruption &amp; Accountability
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          Portugal scores 56 out of 100 on the Transparency International Corruption Perceptions Index 2024, ranking 46th globally — a decline of one point from 57 in 2023 and a continuation of a multi-year downward trend from its 2019 peak of 62. Transparência e Integridade (Transparency International Portugal) attributes the decline to the corrosive effect of high-profile political corruption scandals, inadequate protection of whistleblowers, and delays in the justice system that allow corruption cases to lapse under statute of limitations. The same score of 56/100 and rank 46th was confirmed in CPI 2025 (published February 2026 by Ecija Legal), indicating score stagnation. Portugal now ranks below European peers such as Estonia (76), Ireland (77), and — notably — Chile (63), reflecting a structural anti-corruption deficit relative to its democratic maturity.
+        </p>
+        <p>
+          The resignation of Prime Minister António Costa in November 2023 — triggered by a judicial investigation into corruption and influence-peddling surrounding lithium mining concessions and green hydrogen infrastructure contracts — was Portugal's most significant political corruption development in decades, plunging the country into a snap election cycle that brought Prime Minister Luís Montenegro to power in March 2024. The Ministério Público's continued investigation of the Costa network into 2025, combined with ongoing trials in the Operação Marquês case (involving former PM José Sócrates, who was finally charged with money laundering and fraud), illustrates the persistent challenge of prosecuting high-level political corruption to conviction within a reasonable timeframe in Portuguese courts.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-4 pt-8 border-t border-slate-100">
+      <h3 class="text-[10px] font-bold tracking-widest text-on-surface uppercase">Information Sources</h3>
+      <ul class="space-y-2">
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.transparency.org/en/countries/portugal" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            transparency.org — Portugal CPI 2024
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.theportugalnews.com/news/2025-04-01/general-crime-down-46/96579" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            theportugalnews.com — RASI 2024 Crime Statistics
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://english.news.cn/20260102/25206ffef9a04099abc274f3dc68d949/c.html" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            xinhua.net — Portugal Homicides 7-Year High 2025
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/06/modernisation-of-the-justice-sector-in-portugal_08c45955/c.html" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            oecd.org — Modernisation of Justice Sector in Portugal, 2024
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="lg:col-span-7 space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">CPI Score</div>
+        <div class="text-4xl font-bold text-on-surface">56</div>
+        <div class="text-[10px] text-amber-500 mt-2">↓ −1 pt, rang 46 (CPI 2024)</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Homicide Rate</div>
+        <div class="text-4xl font-bold text-on-surface">0.84</div>
+        <div class="text-[10px] text-emerald-500 mt-2">Per 100k (2024) — Parmi + bas EU</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Global Rank</div>
+        <div class="text-4xl font-bold text-on-surface">46</div>
+        <div class="text-[10px] text-amber-500 mt-2">↓ Depuis pic de 62/100 en 2019</div>
+      </div>
+    </div>
+
+    <div class="relative overflow-hidden border border-slate-100 shadow-sm">
+      <img
+        alt="Supremo Tribunal de Justiça — Chiado, Lisbon, Portugal"
+        class="w-full h-[600px] object-cover object-center grayscale brightness-90 hover:brightness-100 transition-all duration-1000 ease-in-out"
+        src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c15277f59aaa30bcba4545638b4067002c85dde.jpg"
+      />
+      <div class="absolute inset-0 bg-brand-blue/5 pointer-events-none mix-blend-multiply"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+        <div class="text-[10px] text-white/80 uppercase tracking-widest font-bold mb-1">Institutional Landmark</div>
+        <div class="text-white text-lg font-medium">Supremo Tribunal de Justiça — Chiado, Lisboa</div>
+        <p class="text-white/60 text-[10px] mt-2 max-w-sm">Le Supremo Tribunal de Justiça occupe depuis le XIXe siècle l'ancien Convento de São Domingos no Chiado, au cœur historique de Lisbonne. Sa façade pombaline blanche et or, avec ses arches en calcaire de Lioz et ses grilles en fer forgé ouvragé, symbolise la continuité institutionnelle de la République portugaise issue de la Révolution des Œillets de 1974. Ses 55 conseillers — dont le Presidente do Supremo Tribunal de Justiça, qui préside également le Conselho Superior da Magistratura — exercent la plus haute autorité judiciaire de l'ordre juridictionnel ordinaire.</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center text-[10px] text-slate-400 font-medium px-2">
+      <span>* Visual documentation of judicial authority.</span>
+      <span>Updated: May 2026 — Data: CPI 2024</span>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-24 pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+  <div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+  <div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+  </div>
+  <div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+</body></html>

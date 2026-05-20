@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spain | Justice World</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "on-surface": "#0f172a", "on-surface-variant": "#475569",
+          "brand-gold": "#c9a84c", "brand-blue": "#0d1b2a"
+        },
+        borderRadius: { DEFAULT: "0px", lg: "2px", xl: "4px", full: "9999px" },
+        fontFamily: { body: ["Inter", "sans-serif"] }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: "Inter", sans-serif; background-color: #ffffff; color: #0f172a; -webkit-font-smoothing: antialiased; }
+  .nav-border { border-bottom: 1px solid #e2e8f0; }
+  .bg-accent-gradient {
+    background-image:
+      radial-gradient(circle at 15% 15%, rgba(201,168,76,0.08) 0%, transparent 45%),
+      radial-gradient(circle at 85% 85%, rgba(13,27,42,0.05) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  .watermark-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h1v100h-1zM0 0h100v1h-100z' fill='%23c9a84c' fill-opacity='0.03'/%3E%3C/svg%3E");
+  }
+</style>
+</head>
+<body class="bg-white bg-accent-gradient relative">
+<div class="watermark-pattern absolute inset-0 opacity-50 pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md nav-border flex justify-between items-center px-8 h-16">
+  <div class="flex items-center gap-12">
+    <a href="Home.html" class="text-xl font-bold tracking-tight text-on-surface hover:text-brand-gold transition-colors">Justice World</a>
+    <div class="hidden md:flex gap-8 items-center h-full">
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Home.html">Home</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface border-b border-brand-gold/50 pb-1" href="Home.html#map">Global Index</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="Rankings.html">Rankings</a>
+      <a class="text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="About.html">About</a>
+    </div>
+  </div>
+  <a href="Home.html" class="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to Home
+  </a>
+</nav>
+
+<header class="pt-32 pb-12 px-8 max-w-7xl mx-auto relative z-10">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-slate-100 pb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <img alt="Flag of Spain" class="w-8 h-auto border border-slate-100" src="https://flagcdn.com/w80/es.png"/>
+        <span class="px-2 py-0.5 rounded bg-red-50 text-red-700 text-[10px] font-bold tracking-widest uppercase flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+          Constitutional Crisis
+        </span>
+      </div>
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tight text-on-surface" style="letter-spacing:-0.02em">Spain</h1>
+    </div>
+    <div class="flex flex-col items-start md:items-end gap-1 text-on-surface-variant">
+      <span class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40">Reino de España</span>
+      <span class="text-base font-normal">Civil Law — Southern Europe</span>
+    </div>
+  </div>
+</header>
+
+<main class="px-8 max-w-7xl mx-auto py-12 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+  <div class="lg:col-span-5 space-y-12">
+
+    <section class="space-y-6">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        The Judicial Framework
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          Spain operates a civil law system under the 1978 Constitution, which dismantled the Francoist legal order and established a parliamentary monarchy with a separation of powers model heavily influenced by the German Basic Law. The judicial architecture is tiered across Juzgados de Primera Instancia (first instance courts), Audiencias Provinciales (provincial courts), Tribunales Superiores de Justicia (superior courts of the autonomous communities), the Audiencia Nacional (National High Court with jurisdiction over terrorism, drug trafficking, and large-scale fraud), and at the apex, the Tribunal Supremo — Spain's highest court in all judicial orders except constitutional matters. The Consejo General del Poder Judicial (CGPJ), the judiciary's governing body composed of 20 members appointed by Parliament, is constitutionally mandated to guarantee judicial independence — though its frequent political deadlocks, including a four-year vacancy crisis resolved only in 2021 and further governance disputes in 2024, are widely cited as a structural vulnerability of the Spanish judicial system.
+        </p>
+        <p>
+          Spain's constitutional judiciary experienced its most polarising episode in decades with the Amnesty Law (Ley Orgánica 1/2024 de amnistía) passed in June 2024 by the Sánchez government as part of his parliamentary pact with Catalan independence parties — granting amnesty for acts related to the 2017 Catalan independence referendum, including to former Catalan president Carles Puigdemont. The Constitutional Court (Tribunal Constitucional) upheld the constitutionality of the general amnesty framework in its landmark ruling STC 137/2025 (published November 2025), while simultaneously annulling specific provisions it deemed unconstitutional. The Constitutional Court of Andalusia challenged these rulings via recurso de inconstitucionalidad 6575-2024, and the BOE published Sentencia 177/2025 in November 2025 confirming the partial validity of the amnesty law. The rulings deepened Spain's territorial and judicial divisions. In September 2024, Isabel Perelló was appointed President of the Tribunal Supremo and CGPJ — the first woman to hold the position in Spain's history.
+        </p>
+        <p>
+          Spain recorded 331 intentional homicides in 2023 — a rate of 0.69 per 100,000 population, essentially stable from 0.68 in 2022 and representing one of the lowest homicide rates in the EU and globally. This figure has remained consistently low for over a decade, fluctuating between 289 (2018) and 385 (2011), reflecting Spain's highly effective public security apparatus and low levels of organised crime violence by international standards. Of the 331 homicides in 2023, 111 victims (33.5%) were women — reflecting Spain's persistent domestic violence crisis — and 69 occurred within family contexts. Spain has invested heavily in femicide prevention since 2004's landmark Ley Integral contra la Violencia de Género, making it one of the first countries to legally define and specifically prosecute gender-based violence. Eurostat data confirms Spain's 0.69/100k rate is well below the EU average of 0.9/100k recorded in 2023.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-6 pt-8 border-t border-slate-100">
+      <h2 class="text-sm font-bold uppercase tracking-widest text-on-surface flex items-center gap-2">
+        <span class="w-4 h-[1px] bg-brand-gold"></span>
+        Corruption &amp; Accountability
+      </h2>
+      <div class="space-y-6 text-on-surface-variant leading-relaxed text-base">
+        <p>
+          Spain scores 56 out of 100 on the Transparency International Corruption Perceptions Index 2024, ranking 46th globally — unchanged in score from 2023 (also 56) but falling two places in rank. The 2025 CPI (published February 2026) confirmed a further deterioration: score dropped to 55/100, rank fell to 49th — a loss of three places in one year, placing Spain below Portugal (56) and Slovenia (58) within the EU, as reported by The Diplomat in Spain. Trading Economics confirms Spain's CPI 2025 score at 55/100. The European Commission's 2024 Rule of Law Report for Spain highlights persistent concerns about the length of major corruption trials, limited transparency in political party financing, and the revolving door between regulatory positions and the private sector.
+        </p>
+        <p>
+          Spain's anti-corruption landscape is shaped by the Oficina Antifraude (in Catalonia), the Agencia Estatal Antifraude, and specialised prosecutors including the Fiscalía Anticorrupción. However, the country remains haunted by systemic corruption scandals: the PP (Partido Popular) Gürtel case — which resulted in Spain's first-ever conviction of a governing party for institutional corruption in 2018 — set a historic precedent, but subsequent cases involving the PP, PSOE, and regional parties in Valencia, Murcia, and Andalusia have continued to erode public trust. The Caso Koldo (2024), involving alleged commissions paid for medical supplies during the COVID-19 pandemic to a network linked to Socialist politicians, was the defining corruption affair of the Sánchez legislative term. Spain ranks 17th out of 27 EU member states in the CPI 2025 — a position that Transparency International Spain describes as "far from the top tier of EU performers."
+        </p>
+      </div>
+    </section>
+
+    <section class="space-y-4 pt-8 border-t border-slate-100">
+      <h3 class="text-[10px] font-bold tracking-widest text-on-surface uppercase">Information Sources</h3>
+      <ul class="space-y-2">
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.transparency.org/en/countries/spain" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            transparency.org — Spain CPI 2024 &amp; 2025
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://countryeconomy.com/demography/homicides/spain" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            countryeconomy.com — Spain Intentional Homicides 2023
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://thediplomatinspain.com/en/2026/02/10/spains-ranking-in-the-global-corruption-perceptions-index-worsens-by-three-places/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            thediplomatinspain.com — Spain CPI 2025, fév. 2026
+          </a>
+        </li>
+        <li>
+          <a class="flex items-center gap-2 text-xs text-on-surface-variant hover:text-brand-blue transition-colors" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26692" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            boe.es — Sentencia TC 177/2025, Loi d'amnistie, nov. 2025
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="lg:col-span-7 space-y-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">CPI Score</div>
+        <div class="text-4xl font-bold text-on-surface">56</div>
+        <div class="text-[10px] text-amber-500 mt-2">↓ 55 en CPI 2025, rang 49</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Homicide Rate</div>
+        <div class="text-4xl font-bold text-on-surface">0.69</div>
+        <div class="text-[10px] text-emerald-500 mt-2">Per 100k (2023) — Parmi + bas EU</div>
+      </div>
+      <div class="bg-white/60 backdrop-blur-sm p-6 border border-slate-100">
+        <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-3 font-bold">Global Rank</div>
+        <div class="text-4xl font-bold text-on-surface">49</div>
+        <div class="text-[10px] text-amber-500 mt-2">↓ 49e en CPI 2025 (fév. 2026)</div>
+      </div>
+    </div>
+
+    <div class="relative overflow-hidden border border-slate-100 shadow-sm">
+      <img
+        alt="Tribunal Supremo de España — Madrid"
+        class="w-full h-[600px] object-cover object-top grayscale brightness-90 hover:brightness-100 transition-all duration-1000 ease-in-out"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/01/TRIBUNAL_SUPREMO_DE_ESPA%C3%91A.jpg"
+      />
+      <div class="absolute inset-0 bg-brand-blue/5 pointer-events-none mix-blend-multiply"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+        <div class="text-[10px] text-white/80 uppercase tracking-widest font-bold mb-1">Institutional Landmark</div>
+        <div class="text-white text-lg font-medium">Tribunal Supremo de España — Madrid</div>
+        <p class="text-white/60 text-[10px] mt-2 max-w-sm">Le Tribunal Supremo d'Espagne, inauguré en 1882 dans l'ancien couvent des Agustinos Recoletos du quartier de Las Salesas Reales à Madrid, est la juridiction suprême de l'ordre judiciaire espagnol en matière civile, pénale, contentieux-administrative, sociale et militaire. Sa façade néoclassique ornée d'un groupe sculpté couronné du drapeau espagnol — et son fronton monumental aux colonnes de granit — symbolise la permanence de l'État de droit dans une démocratie constitutionnelle confrontée à ses tensions territoriales et institutionnelles les plus profondes depuis 1978.</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center text-[10px] text-slate-400 font-medium px-2">
+      <span>* Visual documentation of judicial authority.</span>
+      <span>Updated: May 2026 — Data: CPI 2024 / CPI 2025</span>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-24 pb-12 px-8 max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 relative z-10">
+  <div class="text-on-surface font-bold uppercase tracking-[0.2em] text-xs">The Sovereign Archive</div>
+  <div class="flex gap-10 text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">
+    <a class="hover:text-brand-gold transition-colors" href="#">Legal Framework</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Methodology</a>
+    <a class="hover:text-brand-gold transition-colors" href="#">Privacy</a>
+  </div>
+  <div class="text-slate-300 text-[10px] font-medium">© 2024 Justice World. Official Archival Data.</div>
+</footer>
+</body></html>
