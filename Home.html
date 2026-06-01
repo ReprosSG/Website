@@ -166,9 +166,9 @@
 </div>
 </div>
 </div>
-<a href="Rankings.html" class="bg-primary hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg shadow-primary/20 w-full sm:w-auto inline-block text-center">
-  Explore Full Rankings
-</a>
+<button class="bg-primary hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg shadow-primary/20 w-full sm:w-auto">
+                        Explore Full Data
+                    </button>
 </div>
 <div class="lg:w-2/3 w-full scroll-reveal" style="transition-delay: 200ms;">
 <div class="bg-white dark:bg-[#111827] p-2 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-2xl relative">
@@ -192,9 +192,9 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 <div class="bg-gray-50 dark:bg-card-dark p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm scroll-reveal">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Corruption Perceptions Index 2023</h3>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Corruption Perceptions Index 2024</h3>
 <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Top 5 vs Bottom 5 Countries (Score 0-100)</p>
-<div class="relative h-72 w-full">
+<div class="relative h-96 w-full">
 <canvas id="cpiChart"></canvas>
 </div>
 </div>
@@ -221,15 +221,15 @@
 <div class="mt-20">
 <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Support Organizations Making a Difference</h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="https://www.amnesty.org" target="_blank" rel="noopener noreferrer">
+<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="#">
 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Amnesty International</h4>
 <p class="text-sm text-gray-600 dark:text-gray-400">Campaigning for a world where human rights are enjoyed by all.</p>
 </a>
-<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="https://www.transparency.org" target="_blank" rel="noopener noreferrer">
+<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="#">
 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">Transparency Int.</h4>
 <p class="text-sm text-gray-600 dark:text-gray-400">Leading the fight against corruption to promote transparency.</p>
 </a>
-<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="https://peacekeeping.un.org" target="_blank" rel="noopener noreferrer">
+<a class="block p-6 bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-800 hover:border-primary dark:hover:border-primary transition-colors group" href="#">
 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">UN Peacekeeping</h4>
 <p class="text-sm text-gray-600 dark:text-gray-400">Helping countries navigate the difficult path from conflict to peace.</p>
 </a>
@@ -327,48 +327,22 @@
         // --- Leaflet Map ---
         // Coordinates for countries
         const locations = [
-            { name: "Denmark",        coords: [56.2639, 9.5018],    score: 90, color: "green" },
-            { name: "Finland",        coords: [61.9241, 25.7482],   score: 88, color: "green" },
-            { name: "New Zealand",    coords: [-40.9006, 174.8860], score: 83, color: "green" },
-            { name: "Singapore",      coords: [1.3521, 103.8198],   score: 84, color: "green" },
-            { name: "Norway",         coords: [60.4720, 8.4689],    score: 81, color: "green" },
-            { name: "Switzerland",    coords: [46.8182, 8.2275],    score: 81, color: "green" },
-            { name: "Luxembourg",     coords: [49.8153, 6.1296],    score: 81, color: "green" },
-            { name: "Sweden",         coords: [60.1282, 18.6435],   score: 80, color: "green" },
-            { name: "Netherlands",    coords: [52.1326, 5.2913],    score: 78, color: "green" },
-            { name: "Iceland",        coords: [64.9631, -19.0208],  score: 77, color: "green" },
-            { name: "Australia",      coords: [-25.2744, 133.7751], score: 77, color: "green" },
-            { name: "Ireland",        coords: [53.4129, -8.2439],   score: 77, color: "green" },
-            { name: "Estonia",        coords: [58.5953, 25.0136],   score: 76, color: "green" },
-            { name: "Uruguay",        coords: [-32.5228, -55.7658], score: 76, color: "green" },
-            { name: "Canada",         coords: [56.1304, -106.3468], score: 75, color: "green" },
-            { name: "Germany",        coords: [51.1657, 10.4515],   score: 75, color: "green" },
-            { name: "Hong Kong",      coords: [22.3193, 114.1694],  score: 74, color: "green" },
-            { name: "Bhutan",         coords: [27.5142, 90.4336],   score: 72, color: "green" },
-            { name: "Seychelles",     coords: [-4.6796, 55.4920],   score: 72, color: "green" },
-            { name: "United Kingdom", coords: [55.3781, -3.4360],   score: 71, color: "green" },
-            { name: "Japan",          coords: [36.2048, 138.2529],  score: 71, color: "green" },
-            { name: "Belgium",        coords: [50.5039, 4.4699],    score: 69, color: "green" },
-            { name: "United States",  coords: [37.0902, -95.7129],  score: 65, color: "green" },
-            { name: "Israel",         coords: [31.0461, 34.8516],   score: 64, color: "green" },
-            { name: "Taiwan",         coords: [23.6978, 120.9605],  score: 67, color: "green" },
-            { name: "France",         coords: [46.2276, 2.2137],    score: 67, color: "green" },
-            { name: "Austria",        coords: [47.5162, 14.5501],   score: 67, color: "green" },
-            { name: "Chile",          coords: [-35.6751, -71.5430], score: 63, color: "green" },
-            { name: "Portugal",       coords: [39.3999, -8.2245],   score: 57, color: "orange" },
-            { name: "Spain",          coords: [40.4637, -3.7492],   score: 56, color: "orange" },
-            { name: "Italy",          coords: [41.8719, 12.5674],   score: 54, color: "orange" },
-            { name: "South Africa",   coords: [-30.5595, 22.9375],  score: 41, color: "orange" },
-            { name: "India",          coords: [20.5937, 78.9629],   score: 38, color: "red" },
-            { name: "Brazil",         coords: [-14.2350, -51.9253], score: 34, color: "red" },
-            { name: "China",          coords: [35.8617, 104.1954],  score: 43, color: "orange" },
-            { name: "Mexico",         coords: [23.6345, -102.5528], score: 26, color: "red" },
-            { name: "Russia",         coords: [61.5240, 105.3188],  score: 22, color: "red" },
-            { name: "Venezuela",      coords: [9.0820, -66.1411],   score: 10, color: "red" },
-            { name: "Syria",          coords: [34.8021, 38.9968],   score: 12, color: "red" },
-            { name: "South Sudan",    coords: [6.8770, 31.3070],    score: 8,  color: "red" },
-            { name: "Somalia",        coords: [5.1521, 46.1996],    score: 9,  color: "red" },
-            { name: "Yemen",          coords: [15.5527, 48.5164],   score: 13, color: "red" },
+            { name: "Denmark", coords: [56.2639, 9.5018], score: 90, color: "green" },
+            { name: "Finland", coords: [61.9241, 25.7482], score: 87, color: "green" },
+            { name: "New Zealand", coords: [-40.9006, 174.8860], score: 85, color: "green" },
+            { name: "Singapore", coords: [1.3521, 103.8198], score: 83, color: "green" },
+            { name: "Canada", coords: [56.1304, -106.3468], score: 76, color: "green" },
+            { name: "Taiwan", coords: [23.6978, 120.9605], score: 67, color: "green" },
+            { name: "Brazil", coords: [-14.2350, -51.9253], score: 36, color: "red" },
+            { name: "Mexico", coords: [23.6345, -102.5528], score: 31, color: "red" },
+            { name: "India", coords: [20.5937, 78.9629], score: 39, color: "red" },
+            { name: "China", coords: [35.8617, 104.1954], score: 42, color: "orange" },
+            { name: "Russia", coords: [61.5240, 105.3188], score: 26, color: "red" },
+            { name: "Syria", coords: [34.8021, 38.9968], score: 13, color: "red" },
+            { name: "South Sudan", coords: [6.8770, 31.3070], score: 13, color: "red" },
+            { name: "Somalia", coords: [5.1521, 46.1996], score: 11, color: "red" },
+            { name: "Yemen", coords: [15.5527, 48.5164], score: 16, color: "red" },
+            { name: "Venezuela", coords: [9.0820, -66.1411], score: 13, color: "red" }
         ];
         // Determine if dark mode is active to set chart colors, but map remains light
         const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -412,54 +386,8 @@
             });
             // Click event to redirect
             marker.on('click', () => {
-                const pages = {
-                    'Denmark': 'Denmark.html',
-                    'Finland': 'Finland.html',
-                    'Singapore' : 'Singapore.html',
-                    'New Zealand' : 'New_Zealand.html',
-                    'Norway' : 'Norway.html',
-                    'Switzerland' : 'Switzerland.html',
-                    'Luxembourg' : 'Luxembourg.html',
-                    'Sweden' : 'Sweden.html',
-                    'Netherlands' : 'Netherlands.html',
-                    'Iceland' : 'Iceland.html',
-                    'Australia' : 'Australia.html',
-                    'Ireland' : 'Ireland.hmtl',
-                    'Estonia' : 'Estonia.html',
-                    'Uruguay' : 'Uruguay.html',
-                    'Canada' : 'Canada.html',
-                    'Germany' : 'Germany.html',
-                    'Hong Kong' : 'HongKong.html',
-                    'Bhutan' : 'Bhutan.html',
-                    'Seychelles' : 'Seychelles.html',
-                    'United Kingdom' : 'UnitedKingdom.html',
-                    'Japan' : 'Japan.html',
-                    'Belgium' : 'Belgium.html',
-                    'United States' : 'UnitedStates.html',
-                    'Taiwan' : 'Taiwan.html',
-                    'France' : 'France.html',
-                    'Austria' : 'Austria.html',
-                    'Chile' : 'Chile.html',
-                    'Portugal' : 'Portugal.html',
-                    'Spain' : 'Spain.html',
-                    'Italy' : 'Italy.html',
-                    'South Africa' : 'SouthAfrica.html',
-                    'India' : 'India.html',
-                    'Brazil' : 'Brazil.html',
-                    'China' : 'China.html',
-                    'Mexico' : 'Mexico.html',
-                    'Russia' : 'Russia.html',
-                    'Venezuela' : 'Venezuela.html',
-                    'Syria' : 'Syria.html',
-                    'South Sudan' : 'SouthSudan.html',
-                    'Somalia' : 'Somalia.html',
-                    'Yemen' : 'Yemen.html',
-                };
-                if (pages[loc.name]) {
-                    window.location.href = pages[loc.name];
-                } else {
-                    alert(`Page pour ${loc.name} bientôt disponible.`);
-                }
+                // In a real app: window.location.href = `country.html?country=${encodeURIComponent(loc.name)}`;
+                alert(`Redirecting to detail page for ${loc.name}...`);
             });
         });
         // --- Charts.js ---
@@ -471,12 +399,14 @@
         new Chart(ctxCPI, {
             type: 'bar',
             data: {
-                labels: ['Denmark', 'Finland', 'New Zealand', '...', 'Syria', 'Venezuela', 'Somalia'],
+                labels: ['Denmark', 'Finland', 'Singapore', 'New Zealand', 'Norway', '...', 'Yemen', 'Syria', 'Venezuela', 'Somalia', 'South Sudan'],
                 datasets: [{
                     label: 'CPI Score 2024',
-                    data: [90, 87, 85, null, 13, 13, 11],
+                    data: [90, 88, 84, 83, 81, null, 13, 12, 10, 9, 8],
                     backgroundColor: [
-                        '#22c55e', '#22c55e', '#22c55e', 'rgba(0,0,0,0)', '#ef4444', '#ef4444', '#ef4444'
+                        '#22c55e', '#22c55e', '#22c55e', '#22c55e', '#22c55e',
+                        'rgba(0,0,0,0)',
+                        '#ef4444', '#ef4444', '#ef4444', '#ef4444', '#ef4444'
                     ],
                     borderRadius: 4
                 }]
